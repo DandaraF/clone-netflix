@@ -1,0 +1,63 @@
+:root {
+  --color_primary: #fe1f27;
+  --background_primary: #101010;
+  --color_secondary: #e00109;
+  --background_secondary: #202020;
+}
+/* background: rgb(254,31,39);
+background: linear-gradient(90deg, rgba(254,31,39,1) 0%, rgba(16,16,16,1) 100%); */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: var(--background_primary); */
+  color: #fbfbfb;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+}
+
+nav {
+  width: 80px;
+  height: 100%;
+  background: var(--background_secondary);
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  height: 60px;
+  margin: 30px 0 50px;
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.item_menu {
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+.item_menu:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 31, 39, 1) 0%,
+    rgba(16, 16, 16, 1) 100%
+  );
+}
+
+/* 
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("/img/imagem.jpg");
+} */
