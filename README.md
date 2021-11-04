@@ -2,7 +2,7 @@
 
 Clone do netflix com outra roupagem.
 
-##Técnologias utilizadas:
+## écnologias utilizadas:
 
 <li>HTML</li>
 <li>CSS</li>
