@@ -130,28 +130,28 @@ nav {
   );
 }
 
-/* ---------------ASIDE-------------------- */
+/* -----------------MAIN------------------- */
 main{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   flex: 1 0 auto;
   margin: 20px 0;
+  width: 100%;
 }
-/* -----------------MAIN------------------- */
 
 main .banner{
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   justify-content: flex-end;
-  width: 60%;
+  width: 80%;
   color: #ffffff;
   height: 400px;
   background: url("../img/league.jpg") no-repeat;
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
     url("../img/league.jpg") no-repeat; */
-    
   background-size: cover;
   background-position-x: right;
 }
@@ -201,6 +201,82 @@ main .description{
   font-size: 16px;
   text-align: justify;
 }
+
+ /* ----CARD--- */
+ 
+h2{
+  margin-left: 20px;
+  
+}
+
+
+main .painel_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:10px;
+  width: 80%;
+  height: 100%;
+  font-size: 18px;
+  background-color: #3a3a3a00;
+  margin: 20px 0;
+  
+}
+
+main .cards_games{
+  display: flex;
+  gap:10px;
+  padding: 20px ;
+
+}
+
+main .profile_game{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 300px;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: #3030309d;
+  border-radius: 8px;
+
+}
+main .content_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .banner_game{
+  height: 201px;
+  width: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: left center;
+
+}
+
+main .content_info_game{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  margin-top: 10px;
+  height: 180px;
+  text-align: justify;
+}
+
+
+main .title_card_game{
+  font-size: 24px;
+  color: var(--color_primary);
+}
+
+main .btn_card_game{
+  margin-top: 20px;
+  box-shadow: none;
+}
+
+
+
 
 /* -----------------FOOTER----------------------- */
 footer{
