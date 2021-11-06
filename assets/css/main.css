@@ -54,7 +54,7 @@ header {
 }
 
 .logo {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: var(--color_primary);
   cursor: pointer;
   font-size: 50px;
@@ -69,7 +69,7 @@ header {
   padding-right: 40px;
   gap: 30px;
 }
-.profile img{
+.profile img {
   cursor: pointer;
 }
 
@@ -104,17 +104,15 @@ header {
 }
 
 /* ----------------------NAV ---------------------------*/
-.container_page{
+.container_page {
   display: flex;
   height: 100%;
   width: 100%;
- 
 }
 
 nav {
   width: 65px;
-  background: var(--background_secondary);
-  
+  background-color: var(--background_secondary);
 }
 
 .menu {
@@ -124,7 +122,6 @@ nav {
   gap: 10px;
   width: 100%;
   height: 100%;
-  
 }
 .item_menu {
   padding: 20px 0;
@@ -140,7 +137,7 @@ nav {
 }
 
 /* -----------------MAIN------------------- */
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,12 +146,99 @@ main{
   padding-top: 30px;
 }
 
-main .banner{
+/* ------Carousel--------- */
+
+.highlights{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap:10px;
+  
+ 
+}
+
+.carousel {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid var(--color_primary);
+} 
+
+.card_highlight{
+  
+}
+
+.info_highlight{
+  display: flex;
+  background-color: var(--background_secondary);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6px 0;
+  gap:10px;
+  width: 100%;
+  text-transform:uppercase ;
+  
+}
+
+
+/* .info_highlight {
+  width: 100%;
+  display: flex;
+  padding: 5px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: #afafaf25;
+  color: #f8f8f8;
+} */
+.name_game_highlight{
+  font-size: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+}
+.description_highlight{
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+.btn_default {
+  height: 32px;
+  width: 113px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 4px;
+  border-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  background-color: rgba(109, 20, 20, 0.829);
+  border: 1px solid rgba(126, 67, 67, 0.925);
+}
+.btn_default:hover {
+  border: 1px solid rgba(129, 49, 49, 0.678);
+  background-color: #700b0b91;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .banner {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   justify-content: flex-end;
-  width: 80%;
+  width: 100%;
   color: #ffffff;
   height: 400px;
   background: url("../img/league.jpg") no-repeat;
@@ -163,78 +247,30 @@ main .banner{
   background-size: cover;
   background-position-x: right;
   margin-bottom: 30px;
-  
 }
 
-main button{
-  height: 35px;
-  width: 113px;
-  margin: 0 20px 20px;
-  font-size: 18px;
-  color:#fff;
-  border-radius: 4px;
-  border-style: none;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
-  background-color:rgba(109, 20, 20, 0.829);
-  box-shadow:5px 5px 3px 0px rgba(196, 92, 92, 0.185);
-  border: 1px solid rgba(126, 67, 67, 0.925);
 
-}
-main button:hover{
-  border: 1px solid rgba(129, 49, 49, 0.678);
-  background-color:#700b0b91;
-}
 
-main .background_caption{
-  background: #000000de;
-  width: 100%;
-}
+/* ----CARD--- */
 
-main .info{
-  width: 100%;
-  display: flex;
-  padding:5px 20px;
-  flex-direction: column;
-  align-items: center;
-  gap:5px;
-  background-color: #afafaf25;
-  color:#f8f8f8;
-  
-
-}
-main .name_game{
-  font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 900;
-}
-main .description{
-  font-size: 16px;
-  text-align: justify;
-}
-
- /* ----CARD--- */
-
-main .painel_card{
+main .painel_card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding:10px;
+  padding: 10px;
   width: 80%;
   height: 100%;
   font-size: 18px;
   background-color: #3a3a3a00;
-  
 }
 
-main .cards_games{
+main .cards_games {
   display: flex;
-  gap:10px;
-  padding: 20px 0 ;
-
+  gap: 10px;
+  padding: 20px 0;
 }
 
-main .profile_game{
+main .profile_game {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -243,108 +279,72 @@ main .profile_game{
   padding: 10px;
   background-color: #3030309d;
   border-radius: 8px;
-
 }
-main .content_card{
+main .content_card {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
 
-main .container_title{
+main .container_title {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
 }
-main .container_title p{
+main .container_title p {
   color: var(--color_primary);
   cursor: pointer;
   font-weight: 600px;
 }
 
-main .container_title p:hover{
+main .container_title p:hover {
   color: rgb(179, 29, 29);
   cursor: pointer;
   font-weight: 600px;
-
 }
 
-
-main .banner_game{
+main .banner_game {
   height: 201px;
   width: 270px;
   border-radius: 12px;
   object-fit: cover;
   object-position: left center;
-  
-  
-
 }
 
-main .content_info_game{
+main .content_info_game {
   display: flex;
   flex-direction: column;
-  gap:8px;
+  gap: 8px;
   margin-top: 10px;
   height: 180px;
   text-align: justify;
 }
 
-
-main .title_card_game{
+main .title_card_game {
   font-size: 24px;
   color: var(--color_primary);
 }
 
-main .btn_card_game{
+main .btn_card_game {
   margin: 20px 0 3px 0;
   box-shadow: none;
-  
 }
 
 /* -----------------FOOTER----------------------- */
-footer{
+footer {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
   align-items: center;
-  gap:10px;
-  padding: 10px 0 ;
+  gap: 10px;
+  padding: 10px 0;
   font-size: 18px;
   background-color: #202020;
 }
-footer .developerName{
+footer .developerName {
   color: var(--color_primary);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 .filme-principal {
