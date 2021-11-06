@@ -1,94 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <title>NETFLIX CLONE</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="containerHeader">
-        <h1 class="logo">NETGAMES</h1>
-        <div class="search">
-          <input type="text" placeholder="Pesquisar" />
-          <button type="button">
-            <img src="assets/img/search.svg" alt="Pesquisar" />
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
+  <title>NETFLIX CLONE</title>
+</head>
 
-        <div class="profile">
-          <img src="assets/img/notification.svg" alt="Notificação" />
+<body>
+  <header>
+    <div class="containerHeader">
+      <h1 class="logo">NETGAMES</h1>
+      <div class="search">
+        <input type="text" placeholder="Pesquisar" />
+        <button type="button">
+          <img src="assets/img/search.svg" alt="Pesquisar" />
+        </button>
+      </div>
 
-          <div class="user">
-            <img src="assets/img/photo.jpg" alt="Foto do usuário - Dandara" />
-            <p>Dandara</p>
-          </div>
+      <div class="profile">
+        <img src="assets/img/notification.svg" alt="Notificação" />
+
+        <div class="user">
+          <img src="assets/img/photo.jpg" alt="Foto do usuário - Dandara" />
+          <p>Dandara</p>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="container_page">
+  <div class="container_page">
     <nav>
       <div class="menu">
-        <a href="#" class="item_menu"
-          ><img src="../../assets/img/chat.svg" alt="Chat"
-        /></a>
-        <a href="#" class="item_menu"
-          ><img src="../../assets/img/user.svg" alt="Usuário"
-        /></a>
-        <a href="#" class="item_menu"
-          ><img src="../../assets/img/message.svg" alt="Mensagem"
-        /></a>
+        <a href="#" class="item_menu"><img src="../../assets/img/chat.svg" alt="Chat" /></a>
+        <a href="#" class="item_menu"><img src="../../assets/img/user.svg" alt="Usuário" /></a>
+        <a href="#" class="item_menu"><img src="../../assets/img/message.svg" alt="Mensagem" /></a>
       </div>
     </nav>
 
     <main>
-      <div class="banner">
-        <button type="button">Jogar</button>
-        <div class="background_caption">
-          <div class="info">
-            <h2 class="name_game">LEAGUE OF LEGENDS</h2>
 
-            <div class="description">
-              <p>
-                League of Legends é um jogo de estratégia em que duas equipes de
-                cinco poderosos Campeões se enfrentam para destruir a base uma
-                da outra. Escolha entre mais de 140 Campeões para realizar
-                jogadas épicas, assegurar abates e destruir torres conforme você
-                luta até a vitória.
-              </p>
+      <div class="highlights">
+        <h1>Recomendados e em Destaque</h1>
+        <div class="carousel">
+
+          <!-- ---------------------Destaque 1 -------------------- -->
+          <div class="card_highlight">
+
+            <img src="assets/img/league.jpg" alt="Jogo League of Legends" />
+            <div class="info_highlight">
+              <h2 class="name_game_highlight">League of Legends</h2>
+              <button class="btn_default" type="button">Jogar</button>
             </div>
+
           </div>
+
+
+
+
+
+          <!-- ---------------------Destaque 2 -------------------- -->
+
+          <div class="card_highlight">
+
+            <img src="assets/img/destiny.jpg" alt="Jogo Destiny" />
+            <div class="info_highlight">
+              <h2 class="name_game_highlight">Destiny 2</h2>
+              <button class="btn_default " type="button">Jogar</button>
+            </div>
+
+          </div>
+
+
+          <!-- ---------------------Destaque 3 -------------------- -->
+
+          <div class="card_highlight">
+
+            <div><img src="assets/img/rocketleague.png" alt="Rocket League" /></div>
+
+            <div class="info_highlight">
+              <h2 class="name_game_highlight">Rocket League</h2>
+              <button class="btn_default " type="button">Jogar</button>
+            </div>
+
+          </div>
+
+
         </div>
+
       </div>
 
+
+
+
       <div class="painel_card">
-<!-- ----------------------Mais populares ----------------- -->
+        <!-- ----------------------Mais populares ----------------- -->
         <div class="container_card">
           <div class="container_title">
-             <h2>Mais populares</h2>
-              <p>Mais</p>
+            <h2>Mais populares</h2>
+            <p>Mais</p>
           </div>
-         
-          
+
+
           <div class="cards_games">
             <!-- ---------------GAME 1 ---------------------- -->
             <div class="profile_game">
               <div class="content_card">
-                <img
-                  class="banner_game"
-                  src="./assets/img/battlefleld.png"
-                  alt="Banner battlefleld"
-                />
+                <img class="banner_game" src="./assets/img/battlefleld.png" alt="Banner battlefleld" />
                 <div class="content_info_game">
                   <h3 class="title_card_game">Battlefield 1</h3>
                   <p><strong>Data de Lançamento: </strong> 20/out/2016</p>
@@ -98,18 +124,14 @@
                     em imersivas Histórias de Guerra.
                   </p>
                 </div>
-                <button class="btn_card_game" type="button">Jogar</button>
+                <button class="btn_card_game btn_default" type="button">Jogar</button>
               </div>
             </div>
 
             <!-- ---------------GAME 2 ---------------------- -->
             <div class="profile_game">
               <div class="content_card">
-                <img
-                  class="banner_game"
-                  src="./assets/img/thesims.jpg"
-                  alt="Banner The Sims 4"
-                />
+                <img class="banner_game" src="./assets/img/thesims.jpg" alt="Banner The Sims 4" />
                 <div class="content_info_game">
                   <h3 class="title_card_game">The Sims 4</h3>
                   <p><strong>Data de Lançamento: </strong> 2/set/2014</p>
@@ -119,113 +141,109 @@
                     jogue com a vida!
                   </p>
                 </div>
-                <button class="btn_card_game" type="button">Jogar</button>
+                <button class="btn_card_game btn_default" type="button">Jogar</button>
               </div>
             </div>
 
             <!-- ---------------GAME 3 ---------------------- -->
             <div class="profile_game">
               <div class="content_card">
-                <img
-                  class="banner_game"
-                  src="./assets/img/csgo.jpg"
-                  alt="Banner do jogo CSGO"
-                />
+                <img class="banner_game" src="./assets/img/csgo.jpg" alt="Banner do jogo CSGO" />
                 <div class="content_info_game">
                   <h3 class="title_card_game">Counter-Strike</h3>
                   <p><strong>Data de Lançamento: </strong> 21/ago/2012</p>
                   <p>
-                    O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual foi pioneiro quando lançado há 19 anos. 
+                    O Counter-Strike: Global Offensive (CS:GO) melhora a jogabilidade de ação baseada em equipes na qual
+                    foi pioneiro quando lançado há 19 anos.
                   </p>
                 </div>
-                <button class="btn_card_game" type="button">Jogar</button>
+                <button class="btn_card_game btn_default" type="button">Jogar</button>
               </div>
             </div>
           </div>
-          </div>
-        </div>
-
-<!-- -----------------Novidades---------------- -->
-    <div class="container_card">
-      <div class="container_title">
-        <h2>Novidades</h2>
-        <p>Mais</p>
-    </div>
-    
-    <div class="cards_games">
-      <!-- ---------------GAME 1 ---------------------- -->
-      <div class="profile_game">
-        <div class="content_card">
-          <img
-            class="banner_game"
-            src="./assets/img/empire.jpg"
-            alt="Banner Age of Empires IV"
-          />
-          <div class="content_info_game">
-            <h3 class="title_card_game">Age of Empires IV</h3>
-            <p><strong>Data de Lançamento: </strong> 
-                28/out/2021</p>
-            <p>
-                Um dos mais celebrados jogos de estratégia em tempo real está de volta com tudo em Age of Empires IV, colocando você no centro de grandes batalhas históricas que moldaram o mundo.
-            </p>
-          </div>
-          <button class="btn_card_game" type="button">Jogar</button>
         </div>
       </div>
 
-      <!-- ---------------GAME 2 ---------------------- -->
-      <div class="profile_game">
-        <div class="content_card">
-          <img
-            class="banner_game"
-            src="./assets/img/runeverse.jpg"
-            alt="Runeverse"
-          />
-          <div class="content_info_game">
-            <h3 class="title_card_game">Runeverse</h3>
-            <p><strong>Data de Lançamento: </strong> 1/nov/2021</p>
-            <p>
-                Sea Brawls é um novo e original Card Auto Battler de 8 jogadores. Mergulhe em um cenário fantástico de pirata e recrute sua tripulação entre mais de 150 lacaios, feitiços e equipamentos exclusivos. Construa sua estratégia e domine a tabela de classificação!
-            </p>
-          </div>
-          <button class="btn_card_game" type="button">Jogar</button>
+      <!-- -----------------Novidades---------------- -->
+      <div class="container_card">
+        <div class="container_title">
+          <h2>Novidades</h2>
+          <p>Mais</p>
         </div>
-      </div>
 
-      <!-- ---------------GAME 3 ---------------------- -->
-      <div class="profile_game">
-        <div class="content_card">
-          <img
-            class="banner_game"
-            src="./assets/img/ziggurat.jpg"
-            alt="Banner do jogo ziggorat"
-          />
-          <div class="content_info_game">
-            <h3 class="title_card_game">Ziggurat 2</h3>
-            <p><strong>Data de Lançamento: </strong>28/out/2021</p>
-            <p>
-                Ziggurat está de volta e melhor do que antes! Use armas e feitiços poderosos para derrotar hordas de inimigos e explore masmorras labirínticas neste frenético FPS roguelite. Aprimore suas habilidades e encontre novos equipamentos.
-            </p>
+        <div class="cards_games">
+          <!-- ---------------GAME 1 ---------------------- -->
+          <div class="profile_game">
+            <div class="content_card">
+              <img class="banner_game" src="./assets/img/empire.jpg" alt="Banner Age of Empires IV" />
+              <div class="content_info_game">
+                <h3 class="title_card_game">Age of Empires IV</h3>
+                <p><strong>Data de Lançamento: </strong>
+                  28/out/2021</p>
+                <p>
+                  Um dos mais celebrados jogos de estratégia em tempo real está de volta com tudo em Age of Empires IV,
+                  colocando você no centro de grandes batalhas históricas que moldaram o mundo.
+                </p>
+              </div>
+              <button class="btn_card_game btn_default" type="button">Jogar</button>
+            </div>
           </div>
-          <button class="btn_card_game" type="button">Jogar</button>
+
+          <!-- ---------------GAME 2 ---------------------- -->
+          <div class="profile_game">
+            <div class="content_card">
+              <img class="banner_game" src="./assets/img/runeverse.jpg" alt="Runeverse" />
+              <div class="content_info_game">
+                <h3 class="title_card_game">Runeverse</h3>
+                <p><strong>Data de Lançamento: </strong> 1/nov/2021</p>
+                <p>
+                  Sea Brawls é um novo e original Card Auto Battler de 8 jogadores. Mergulhe em um cenário fantástico de
+                  pirata e recrute sua tripulação entre mais de 150 lacaios, feitiços e equipamentos exclusivos.
+                  Construa sua estratégia e domine a tabela de classificação!
+                </p>
+              </div>
+              <button class="btn_card_game btn_default" type="button">Jogar</button>
+            </div>
+          </div>
+
+          <!-- ---------------GAME 3 ---------------------- -->
+          <div class="profile_game">
+            <div class="content_card">
+              <img class="banner_game" src="./assets/img/ziggurat.jpg" alt="Banner do jogo ziggorat" />
+              <div class="content_info_game">
+                <h3 class="title_card_game">Ziggurat 2</h3>
+                <p><strong>Data de Lançamento: </strong>28/out/2021</p>
+                <p>
+                  Ziggurat está de volta e melhor do que antes! Use armas e feitiços poderosos para derrotar hordas de
+                  inimigos e explore masmorras labirínticas neste frenético FPS roguelite. Aprimore suas habilidades e
+                  encontre novos equipamentos.
+                </p>
+              </div>
+              <button class="btn_card_game btn_default" type="button">Jogar</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
   </div>
 
-      </div>
-    </main>
-    </div>  
-    <footer>
-      <p>
-        &copy; Desenvolvido por
-        <strong class="developerName">Dandara Silva</strong>
-      </p>
-      <p>
-        Projeto Recriando a Interface do Netflix (com outra roupagem) - Digital
-        Innovation One
-      </p>
-    </footer>
-  </body>
+  </div>
+  </main>
+  </div>
+  <footer>
+    <p>
+      &copy; Desenvolvido por
+      <strong class="developerName">Dandara Silva</strong>
+    </p>
+    <p>
+      Projeto Recriando a Interface do Netflix (com outra roupagem) - Digital
+      Innovation One
+    </p>
+  </footer>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+  <script type=text/javascript src="assets/js/index.js"></script>
+</body>
+
 </html>
