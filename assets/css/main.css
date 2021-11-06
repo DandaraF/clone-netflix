@@ -159,14 +159,12 @@ main {
 }
 
 .carousel {
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
   border: 1px solid var(--color_primary);
 } 
 
 .card_highlight{
-
-  
   
 }
 
@@ -176,7 +174,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10px 0;
+  padding: 6px 0;
   gap:10px;
   width: 100%;
   text-transform:uppercase ;
@@ -206,7 +204,7 @@ main {
 
 
 .btn_default {
-  height: 35px;
+  height: 32px;
   width: 113px;
   font-size: 18px;
   color: #fff;
