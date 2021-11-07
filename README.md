@@ -8,10 +8,9 @@ Clone do netflix com outra roupagem.
 <li>CSS</li>
 <li>JS</li>
 
-## Objetivo
+## Descrição do Desafio
 
-A página do site foi criado para o desafio do Digital Innovation One(só podia usar HTML, CSS e JS).
-O desafio consiste em criar 1 página da Netflix.
+Recrie a interface do principal site de streaming mundial utilizando tecnologias simples como HTML5, CSS3 e JavaScript. Nesse projeto você aprenderá: como estruturar um layout, técnicas de CSS3 com containers e variáveis, como posicionar os elementos com Flexbox
 
 <p>
   <img src="assets/img/net.gif"  >
