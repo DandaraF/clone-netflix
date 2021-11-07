@@ -17,6 +17,7 @@ body {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  font-size: 10px;
   flex-direction: column;
   align-content: space-around;
 }
@@ -29,7 +30,7 @@ header {
   background: var(--background_secondary);
 }
 
-.containerHeader {
+.container_header {
   display: flex;
   align-items: center;
   width: 100%;
@@ -37,27 +38,29 @@ header {
   padding: 10px;
 }
 
-.containerHeader input {
+.container_header input {
   height: 40px;
   width: 340px;
   border: none;
-  border-radius: 3px;
+  border-radius: 3px 0 0px 3px;
   outline: none;
   padding-left: 10px;
   background-color: #303030;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.1rem;
 }
 
-.containerHeader input::placeholder {
+.container_header input::placeholder {
   color: #adb5bd;
 }
-
+.name_user {
+  display: flex;
+}
 .logo {
   font-family: "Bebas Neue", cursive;
   color: var(--color_primary);
   cursor: pointer;
-  font-size: 50px;
+  font-size: 4em;
   padding: 0 60px 0 10px;
   letter-spacing: 2px;
 }
@@ -66,7 +69,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 40px;
+  padding-right: 30px;
   gap: 30px;
 }
 .profile img {
@@ -77,18 +80,20 @@ header {
   display: flex;
 }
 
-.search button {
+.btn_search {
   cursor: pointer;
   background-color: #303030;
   border: none;
   padding-right: 10px;
+  border-radius: 0 3px 3px 0;
+  margin-right: 15px;
 }
 
 .user {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 18px;
+  font-size: 0.9rem;
   color: #dededf;
 }
 
@@ -123,8 +128,9 @@ nav {
   width: 100%;
   height: 100%;
 }
+
 .item_menu {
-  padding: 20px 0;
+  padding: 15px 10px;
   width: 100%;
   text-align: center;
 }
@@ -148,60 +154,46 @@ main {
 
 /* ------Carousel--------- */
 
-.highlights{
+.highlights {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  gap:10px;
-  
- 
+  gap: 10px;
 }
 
 .carousel {
   width: 800px;
   margin: 0 auto;
   border: 1px solid var(--color_primary);
-} 
-
-.card_highlight{
-  
 }
 
-.info_highlight{
+.info_highlight {
   display: flex;
   background-color: var(--background_secondary);
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 6px 0;
-  gap:10px;
+  gap: 10px;
   width: 100%;
-  text-transform:uppercase ;
-  
+  text-transform: uppercase;
 }
 
-
-/* .info_highlight {
-  width: 100%;
-  display: flex;
-  padding: 5px 20px;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  background-color: #afafaf25;
-  color: #f8f8f8;
-} */
-.name_game_highlight{
+.name_game_highlight {
   font-size: 25px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 900;
 }
-.description_highlight{
+
+.img_game_highlight {
+  width: 800px;
+}
+
+.description_highlight {
   font-size: 16px;
   text-align: justify;
 }
-
 
 .btn_default {
   height: 32px;
@@ -220,20 +212,7 @@ main {
   background-color: #700b0b91;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-main .banner {
+.banner {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -241,114 +220,105 @@ main .banner {
   width: 100%;
   color: #ffffff;
   height: 400px;
-  background: url("../img/league.jpg") no-repeat;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("../img/league.jpg") no-repeat; */
   background-size: cover;
   background-position-x: right;
   margin-bottom: 30px;
 }
 
-
-
-/* ----CARD--- */
-
-main .painel_card {
+.painel_card {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
   width: 80%;
   height: 100%;
-  font-size: 18px;
+  font-size: 1.1rem;
   background-color: #3a3a3a00;
 }
 
-main .cards_games {
+.cards_games {
   display: flex;
   gap: 10px;
   padding: 20px 0;
 }
 
-main .profile_game {
+.profile_game {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  width: 300px;
-  height: 100%;
+  width: 290px;
   padding: 10px;
   background-color: #3030309d;
   border-radius: 8px;
 }
-main .content_card {
+.more {
+  visibility: visible;
+}
+.content_card {
   display: flex;
   flex-direction: column;
+
   align-items: center;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
-main .container_title {
+.container_title {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
-main .container_title p {
+.container_title p {
   color: var(--color_primary);
   cursor: pointer;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
-main .container_title p:hover {
+.container_title p:hover {
   color: rgb(179, 29, 29);
-  cursor: pointer;
-  font-weight: 600px;
 }
 
-main .banner_game {
+.img_banner_game {
   height: 201px;
   width: 270px;
   border-radius: 12px;
   object-fit: cover;
   object-position: left center;
 }
-
-main .content_info_game {
+.text_descrition_game {
+  text-align: justify;
+}
+.content_info_game {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-top: 10px;
-  height: 180px;
-  text-align: justify;
+  height: 230px;
 }
 
-main .title_card_game {
+.title_card_game {
   font-size: 24px;
   color: var(--color_primary);
 }
 
-main .btn_card_game {
-  margin: 20px 0 3px 0;
+.btn_card_game {
   box-shadow: none;
 }
 
-/* -----------------FOOTER----------------------- */
 footer {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 18px;
   background-color: #202020;
 }
-footer .developerName {
+.developerName {
   color: var(--color_primary);
 }
-
-/* 
-.filme-principal {
-  font-size: 16px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("/img/imagem.jpg");
-} */
+.description_project_footer {
+  font-size: 1rem;
+  text-align: center;
+}
