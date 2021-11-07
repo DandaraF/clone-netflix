@@ -12,3 +12,8 @@ Clone do netflix com outra roupagem.
 
 A página do site foi criado para o desafio do Digital Innovation One(só podia usar HTML, CSS e JS).
 O desafio consiste em criar 1 página da Netflix.
+
+<p>
+  <img src="assets/img/net.gif"  >
+ 
+</p>
