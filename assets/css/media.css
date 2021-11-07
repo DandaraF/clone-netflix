@@ -1,0 +1,113 @@
+@media (max-width: 800px) {
+  header {
+    height: 70px;
+  }
+  .container_header {
+    padding: 10px;
+  }
+  .container_header input {
+    width: 130px;
+    height: 20px;
+  }
+  .logo {
+    padding: 0 15px 0 5px;
+    letter-spacing: 2px;
+    font-size: 2em;
+  }
+  .btn_search {
+    border: none;
+    padding-right: 10px;
+  }
+  .profile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+    gap: 15px;
+  }
+  .btn_search {
+    height: 20px;
+    width: 20px;
+  }
+  .img_btn_search {
+    height: 14px;
+  }
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dededf;
+    gap: 3px;
+  }
+  .user img {
+    height: 35px;
+  }
+  .name_user {
+    display: none;
+  }
+  main {
+    padding-top: 20px;
+  }
+  .btn_default {
+    height: 25px;
+    width: 65px;
+    font-size: 0.8rem;
+  }
+  .highlights {
+    gap: 0;
+  }
+  nav {
+    width: 50px;
+  }
+
+  .menu {
+    width: 30px;
+    position: absolute;
+  }
+
+  .carousel {
+    max-width: 620px;
+  }
+
+  .img_game_highlight {
+    max-width: 620px;
+  }
+  .profile_game {
+    width: 250px;
+  }
+
+  .more {
+    visibility: hidden;
+  }
+  .cards_games {
+    flex-wrap: wrap;
+  }
+  .img_banner_game {
+    width: 240px;
+    height: 170px;
+  }
+  .content_card {
+    font-size: 1rem;
+  }
+  .content_info_game {
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+/* ----------------------- */
+@media (max-width: 700px) {
+  .carousel {
+    width: 410px;
+  }
+  .img_game_highlight {
+    width: 410px;
+  }
+}
+@media (max-width: 500px) {
+  .carousel {
+    width: 250px;
+  }
+  .img_game_highlight {
+    width: 250px;
+  }
+}
